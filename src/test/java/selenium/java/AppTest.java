@@ -24,7 +24,7 @@ public class AppTest
 
     public void testApp(){
     	
-    	System.setProperty("webdriver.firefox.driver", "/home/fta/selenium/geckodriver");
+    	System.setProperty("webdriver.gecko.driver", "/home/fta/selenium/geckodriver");
     	
 		//WebDriver driver = new ChromeDriver();
     	  WebDriver driver = new FirefoxDriver();
