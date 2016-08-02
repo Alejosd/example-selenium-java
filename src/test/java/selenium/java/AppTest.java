@@ -23,7 +23,7 @@ public class AppTest
 
     public void testApp(){
     	
-    	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "chromedriver");
     	
 		WebDriver driver = new ChromeDriver();
 	
