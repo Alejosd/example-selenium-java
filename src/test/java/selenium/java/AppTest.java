@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import junit.framework.TestCase;
@@ -24,10 +23,10 @@ public class AppTest
 
     public void testApp(){
     	
-    	System.setProperty("webdriver.gecko.driver", "/home/fta/selenium/geckodriver");
+    	System.setProperty("webdriver.chrome.driver", "/home/fta/selenium/chromedriver");
     	
-		//WebDriver driver = new ChromeDriver();
-    	  WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
+	
 		driver.manage().window().maximize();
 		driver.get("http://appswls.entel.cl/mientel/login.action");
 		driver.findElement(By.id("msisdn")).clear();
